@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Miguel Fedosyeyev](https://up.htmlacademy.ru/htmlcss/31/user/679259).
-* Наставник: `Неизвестно`.
+* Наставник: [Татьяна Симоненко](https://htmlacademy.ru/profile/tatien).
 
 ---
 
