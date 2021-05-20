@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+    <meta name="viewport" content="width=width-divece, initial-scale=1">
+    <link rel="stylesheet" href="css/page.css">
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-nav">
+        <a href="index.html" class="logo">
+          <img src="img/-e-logo.png" width="163" height="35" alt="Логотип интрнет-магазина Девайс">
+        </a>
+        <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+        <ul class="site-nav-list">
+          <li class="site-nav-item"><a href="blank.html">Войти</a></li>
+          <li class="site-nav-item"><a href="blank.html">Сравнить</a></li>
+          <li class="site-nav-item"><a href="blank.html">Корзина</a></li>
+        </ul>
+        <ul class="site-subnav-list">
+          <li class="site-subnav-item"><a href="#">Каталог товаров</a></li>
+          <li class="site-subnav-item"><a href="blank.html">Доставка</a></li>
+          <li class="site-subnav-item"><a href="blank.html">Гарантия</a></li>
+          <li class="site-subnav-item"><a href="blank.html">Контакты</a></li>
+        </ul>
+        <div class="site-dropnav">
+          <ul class="site-dropnav-list">
+            <li class="site-dropnav-item col-1"><a href="blank.html">Виртуальная реальность</a></li>
+            <li class="site-dropnav-item col-1"><a href="blank.html">Моноподы для селфи</a></li>
+            <li class="site-dropnav-item col-1"><a href="blank.html">Экшн-камеры</a></li>
+            <li class="site-dropnav-item col-2"><a href="blank.html">Фитнес-браслеты</a></li>
+            <li class="site-dropnav-item col-2"><a href="blank.html">Умные часы</a></li>
+            <li class="site-dropnav-item col-3"><a href="blank.html">Квадрокоптер</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Моноподы для селфи</h1>
+      <ul class="breadcrumbs-list">
+          <li class="breadcrumbs-item">Главная</li>
+          <li class="breadcrumbs-item">Каталог товаров</li>
+          <li class="breadcrumbs-item">Моноподы для селфи</li>
+      </ul>
+      <section>
+        <h2>фильтр:</h2>
+        <form action="https://echo.htmlacademy.ru/" method="post" oninput="price-value.value=price.value">
+          <fieldset>
+            <legend>Стоимость</legend>
+            <label class="visual-hidden" for="price">Стоимость</label>
+            от 0<input type="range" min="0" max="10000" step="100" value="5000" name="price" id="price">до<output name="price-value">5000</output>
+          </fieldset>
+          <fieldset>
+            <legend>Цвет</legend>
+            <input type="checkbox" name="color-black" id="color-black" checked>
+            <label for="color-black">Чёрный</label><br>
+            <input type="checkbox" name="color-white" id="color-white">
+            <label for="color-white">Белый</label><br>
+            <input type="checkbox" name="color-blue" id="color-blue" checked>
+            <label for="color-blue">Синий</label><br>
+            <input type="checkbox" name="color-red" id="color-red" checked>
+            <label for="color-red">Красный</label><br>
+            <input type="checkbox" name="color-pink" id="color-pink">
+            <label for="color-pink">Розовый</label>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <input type="radio" name="bluetooth" id="bluetooth-yes" value="yes" checked>
+            <label for="bluetooth-yes">Есть</label><br>
+            <input type="radio" name="bluetooth" id="bluetooth-none" value="none">
+            <label for="bluetooth-none">Нет</label>
+          </fieldset>
+          <input type="submit" value="показать">
+        </form>
+      </section>
+      <section>
+        <h2 class="visual-hidden">Каталог товаров</h2>
+        <div class="sorting">
+          <h3>сортировка:</h3>
+          <form>
+            <input type="button" value="По цене">
+            <input type="button" value="По типу">
+            <input type="button" value="По популярности">
+            <button type="button"><img src="img/icon-up-dir.png" width="18" height="18" alt=""></button>
+            <button type="button"><img src="img/icon-down-dir.png" width="18" height="18" alt=""></button>
+          </form>
+        </div>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <img src="img/item-1-1.png" width="360" height="380" alt="селфи-палка">
+            <a href="blank.html">
+              <h3>Любительская селфи-палка</h3>
+              <p>1 100 руб.</p>
+            </a>
+            <div class="hover-catalo-item">
+               <input type="button" value="в корзину">
+               <input type="button" value="Добавить к сравнению">
+            </div>
+          </li>
+          <li class="catalog-item">
+            <img src="img/item-2-1.png" width="360" height="380" alt="селфи-палка">
+            <a href="blank.html">
+              <h3>Профессиональная селфи-палка </h3>
+              <p>1 500 руб.</p>
+            </a>
+            <div class="hover-catalo-item">
+               <input type="button" value="в корзину">
+               <input type="button" value="Добавить к сравнению">
+            </div>
+          </li>
+          <li class="catalog-item">
+            <img src="img/item-3-1.png" width="360" height="380" alt="селфи-палка">
+            <a href="blank.html">
+              <h3>Непотопляемая селфи-палка</h3>
+              <p>1 500 руб.</p>
+            </a>
+            <div class="hover-catalo-item">
+               <input type="button" value="в корзину">
+               <input type="button" value="Добавить к сравнению">
+            </div>
+          </li>
+          <li class="catalog-item">
+            <img src="img/item-4-1.png" width="360" height="380" alt="селфи-палка">
+            <a href="blank.html">
+              <h3>Селфи-палка «Следуй за мной»</h3>
+              <p>1 900 руб.</p>
+            </a>
+            <div class="hover-catalo-item">
+               <input type="button" value="в корзину">
+               <input type="button" value="Добавить к сравнению">
+            </div>
+          </li>
+        </ul>
+      </section>
+      <div class="catalog-nav">
+        <ul class="catalog-nav-list">
+          <li class="catalog-nav-item">1</li>
+          <li class="catalog-nav-item">2</li>
+          <li class="catalog-nav-item">3</li>
+        </ul>
+        <input type="button" value="назад" disabled>
+        <input type="button" value="вперед">
+      </div>
+    </main>
+    <footer class="main-footer">
+      <section>
+        <a href="index.html" class="logo">
+          <img src="img/logo.png" width="163" height="35" alt="Логотип интрнет-магазина Девайс">
+        </a>
+        <ul class="site-nav-list">
+          <li class="site-nav-item"><a href="blank.html">Войти</a></li>
+          <li class="site-nav-item"><a href="blank.html">Сравнить</a></li>
+          <li class="site-nav-item"><a href="blank.html">Корзина</a></li>
+        </ul>
+      </section>
+      <section>
+        <address>
+          <p class="address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <p class="tel"><a href="tel:+78005558628">Тел.: +7 800 555-86-28</a></p>
+        </address>
+        <ul class="site-subnav-list">
+          <li class="site-subnav-item"><a href="#">Каталог товаров</a></li>
+          <li class="site-subnav-item"><a href="blank.html">Доставка</a></li>
+          <li class="site-subnav-item"><a href="blank.html">Гарантия</a></li>
+          <li class="site-subnav-item"><a href="blank.html">Контакты</a></li>
+        </ul>
+      </section>
+      <section class="social">
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="blank.html">
+              <img src="img/simple-icons_facebook.png" width="32" height="32" alt="Иконка facebook">
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="blank.html">
+              <img src="img/icon_instagram.png" width="32" height="32" alt="Иконка instagram">
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="blank.html">
+              <img src="img/icon_witter.png" width="32" height="32" alt="Иконка twitter">
+            </a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+</html>
