@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Девайс</title>
+  <title>Интернет-магазин гаджетов Девайс</title>
   <meta name="viewport" content="width=width-divece, initial-scale=1">
   <link rel="stylesheet" href="css/page.css">
 </head>
@@ -11,14 +11,27 @@
 <body>
   <header class="main-header">
     <nav class="main-nav">
-      <a href="index.html" class="logo">
-        <img src="img/-e-logo.png" width="163" height="35" alt="Логотип интрнет-магазина Девайс">
+      <a class="logo">
+        <img src="img/logo.svg" width="163" height="35" alt="Логотип интрнет-магазина Девайс">
       </a>
+      <label for="search"><img src="img/icon-search.svg" width="16" height="16" alt="Иконка поиска"></label>
       <input type="search" name="search" id="search" placeholder="Поиск по сайту">
       <ul class="main-nav-list">
-        <li class="main-nav-list-item"><a href="blank.html">Войти</a></li>
-        <li class="main-nav-list-item"><a href="blank.html">Сравнить</a></li>
-        <li class="main-nav-list-item"><a href="blank.html">Корзина</a></li>
+        <li class="main-nav-list-item">
+          <a href="blank.html">
+            <!-- <img src="img/icon-user.svg" width="13" height="14" alt="Иконка войти">-->Войти
+          </a>
+        </li>
+        <li class="main-nav-list-item">
+          <a href="blank.html">
+            <!-- <img src="img/icon-chart.svg" width="14" height="14" alt="Иконка войти">-->Сравнить
+          </a>
+        </li>
+        <li class="main-nav-list-item">
+          <a href="blank.html">
+            <!-- <img src="img/icon-cart.svg" width="10" height="10" alt="Иконка войти">-->Корзина
+          </a>
+        </li>
       </ul>
       <ul class="main-subnav-list">
         <li class="main-subnav-list"><a href="#">Каталог товаров</a></li>
@@ -39,38 +52,13 @@
     </nav>
   </header>
   <main>
-    <h1 class="visual-hidden">Девайс</h1>
+    <h1 class="visually-hidden">Девайс</h1>
     <article>
       <ul class="promo-list">
         <!-- слайдер товаров -->
         <li class="promo-list-item">
-          <h2 class="visual-hidden">Дрон</h2>
-          <img src="img/slider-3-1.png" width="526" height="334" alt="Дрон">
-          <p>Порхает как бабочка, жалит как пчела!</p>
-          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную
-            камеру.</p>
-          <a href="blank.html">Подробнее</a>
-          <dl class="description-list">
-            <dt>Дальность полета</dt>
-            <dd>800 м</dd>
-            <dt>Радиус поражения</dt>
-            <dd>50 м</dd>
-          </dl>
-        </li>
-        <li class="promo-list-item">
-          <h2 class="visual-hidden">Дрон</h2>
-          <img src="img/slider-2-1.png" width="526" height="334" alt="Дрон">
-          <p>Худеем правильно!</p>
-          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-          <a href="blank.html">Подробнее</a>
-          <dl class="description-list">
-            <dt>Без подзарядки</dt>
-            <dd>48 часов</dd>
-          </dl>
-        </li>
-        <li class="promo-list-item">
-          <h2 class="visual-hidden">Дрон</h2>
-          <img src="img/slider-1-1.png" width="526" height="334" alt="Дрон">
+          <h2 class="visually-hidden">Палка для селфи</h2>
+          <img src="img/slider-selfie-stick-1.png" width="526" height="334" alt="Дрон">
           <p>Делай селфи, как Бен Стиллер! </p>
           <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего
             5 килограмм.</p>
@@ -84,86 +72,114 @@
             <dd>Карбон</dd>
           </dl>
         </li>
+        <li class="promo-list-item">
+          <h2 class="visually-hidden">Фитнес-браслеты</h2>
+          <img src="img/slider-band-2.png" width="526" height="334" alt="Дрон">
+          <p>Худеем правильно!</p>
+          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+          <a href="blank.html">Подробнее</a>
+          <dl class="description-list">
+            <dt>Без подзарядки</dt>
+            <dd>48 часов</dd>
+          </dl>
+        </li>
+        <li class="promo-list-item">
+          <h2 class="visually-hidden">Квадрокоптер</h2>
+          <img src="img/slider-drone-3.png" width="526" height="334" alt="Дрон">
+          <p>Порхает как бабочка, жалит как пчела!</p>
+          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную
+            камеру.</p>
+          <a href="blank.html">Подробнее</a>
+          <dl class="description-list">
+            <dt>Дальность полета</dt>
+            <dd>800 м</dd>
+            <dt>Радиус поражения</dt>
+            <dd>50 м</dd>
+          </dl>
+        </li>
       </ul>
     </article>
     <section class="products">
-      <h2 class="visual-hidden">Наши продукты</h2>
+      <h2 class="visually-hidden">Наши продукты</h2>
       <ul class="products-list">
         <li class="products-list-item">
           <a href="blank.html">
             <h3>Виртуальная реальность</h3>
-            <!-- <img src="img/popular-1.png" width="97" height="55"> -->
+            <!-- <img src="img/product-1.svg" width="97" height="55"> -->
             <!-- Не контент: часть дизайна -->
           </a>
         </li>
         <li class="products-list-item">
           <a href="blank.html">
             <h3>Моноподы для селфи</h3>
-            <!-- <img src="img/popular-2.png" width="97" height="55"> -->
+            <!-- <img src="img/product-2.svg" width="97" height="55"> -->
             <!-- Не контент: часть дизайна -->
           </a>
         </li>
         <li class="products-list-item">
           <a href="blank.html">
             <h3>Экшн-камеры</h3>
-            <!-- <img src="img/popular-3.png" width="97" height="55"> -->
+            <!-- <img src="img/product-3.svg" width="97" height="55"> -->
             <!-- Не контент: часть дизайна -->
           </a>
         </li>
         <li class="products-list-item">
           <a href="blank.html">
             <h3>Фитнес-браслеты</h3>
-            <!-- <img src="img/popular-4.png" width="97" height="55"> -->
+            <!-- <img src="img/product-4.svg" width="97" height="55"> -->
             <!-- Не контент: часть дизайна -->
           </a>
         </li>
         <li class="products-list-item">
           <a href="blank.html">
             <h3>Умные часы</h3>
-            <!-- <img src="img/popular-5.png" width="97" height="55"> -->
+            <!-- <img src="img/product-5.svg" width="97" height="55"> -->
             <!-- Не контент: часть дизайна -->
           </a>
         </li>
         <li class="products-list-item">
           <a href="blank.html">
             <h3>Квадрокоптеры</h3>
-            <!-- <img src="img/popular-6.png" width="97" height="55"> -->
+            <!-- <img src="img/product-6.svg" width="97" height="55"> -->
             <!-- Не контент: часть дизайна -->
           </a>
         </li>
       </ul>
     </section>
     <section class="features">
-      <h2 class="visual-hidden">Наши примущества</h2>
+      <h2 class="visually-hidden">Наши примущества</h2>
       <!-- переключатель блоков -->
       <nav class="features-nav">
         <ul class="features-nav-list">
           <li class="features-nav-item">
-            <a href="#features-bloks-delivery">доставка</a>
+            <a href="#features-blocks-delivery">доставка</a>
           </li>
           <li class="features-nav-item">
-            <a href="#features-bloks-guarantee">гарантия</a>
+            <a href="#features-blocks-guarantee">гарантия</a>
           </li>
           <li class="features-nav-item">
-            <a href="#features-bloks-credit">кредит</a>
+            <a href="#features-blocks-credit">кредит</a>
           </li>
         </ul>
       </nav>
       <!-- блоки услуг -->
-      <div class="features-bloks">
-        <ul class="features-bloks-list">
-          <li class="features-bloks-list-item" id="features-bloks-delivery">
-            <p>Доставка</p>
+      <div class="features-blocks">
+        <ul class="features-blocks-list">
+          <li class="features-blocks-list-item" id="features-blocks-delivery">
+            <h3>Доставка</h3>
+            <img src="img/delivery.svg" width="156" height="188" alt="Иконка доставки">
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
               заработаем, поднимая его на ваш этаж.</p>
           </li>
-          <li class="features-bloks-list-item" id="features-bloks-guarantee">
-            <p>Гарантия</p>
+          <li class="features-blocks-list-item" id="features-blocks-guarantee">
+            <h3>Гарантия</h3>
+            <img src="img/guarantee.svg" width="156" height="188" alt="Иконка гарантии">
             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
               Товар, не дом, конечно же.</p>
           </li>
-          <li class="features-bloks-list-item" id="features-bloks-credit">
-            <p>Кредит</p>
+          <li class="features-blocks-list-item" id="features-blocks-credit">
+            <h3>Кредит</h3>
+            <img src="img/credit.svg" width="156" height="188" alt="Иконка кредит">
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
               кредита. Выгодные для нашего банка, разумеется.</p>
           </li>
@@ -171,26 +187,26 @@
       </div>
     </section>
     <section class="partners">
-      <h2 class="visual-hidden">Наши партнёры</h2>
+      <h2 class="visually-hidden">Наши партнёры</h2>
       <ul class="partners-list">
         <li>
           <a href="blank.html">
-            <img src="img/logo-1-1.png" width="260" height="100" alt="Логоти компании DJI">
+            <img src="img/logo-partner-1.png" width="260" height="100" alt="Логоти компании DJI">
           </a>
         </li>
         <li>
           <a href="blank.html">
-            <img src="img/logo-2-1.png" width="260" height="100" alt="Логоти компании SP Adgents">
+            <img src="img/logo-partner-2.png" width="260" height="100" alt="Логоти компании SP Adgents">
           </a>
         </li>
         <li>
           <a href="blank.html">
-            <img src="img/logo-3-1.png" width="260" height="100" alt="Логоти компании GoPro">
+            <img src="img/logo-partner-3.png" width="260" height="100" alt="Логоти компании GoPro">
           </a>
         </li>
         <li>
           <a href="blank.html">
-            <img src="img/logo-4-1.png" width="260" height="100" alt="Логоти компании Vive">
+            <img src="img/logo-partner-4.png" width="260" height="100" alt="Логоти компании Vive">
           </a>
         </li>
       </ul>
@@ -224,7 +240,7 @@
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
           Всякое бывает.
         </p>
-        <img src="img/map-1.jpg" width="560" height="222" alt="Карта">
+        <img src="img/map.jpg" width="560" height="222" alt="Карта">
         <a href="blank.html">напишите нам</a>
       </section>
     </div>
@@ -232,16 +248,28 @@
   <footer class="main-footer">
     <section>
       <a class="logo">
-        <img src="img/logo.png" width="163" height="35" alt="Логотип интрнет-магазина Девайс">
+        <img src="img/logo.svg" width="163" height="35" alt="Логотип интрнет-магазина Девайс">
       </a>
       <ul class="main-nav-list">
-        <li class="main-nav-list-item"><a href="blank.html">Войти</a></li>
-        <li class="main-nav-list-item"><a href="blank.html">Сравнить</a></li>
-        <li class="main-nav-list-item"><a href="blank.html">Корзина</a></li>
+        <li class="main-nav-list-item">
+          <a href="blank.html">
+            <!-- <img src="img/icon-user.svg" width="13" height="14" alt="Иконка войти">-->Войти
+          </a>
+        </li>
+        <li class="main-nav-list-item">
+          <a href="blank.html">
+            <!-- <img src="img/icon-chart.svg" width="14" height="14" alt="Иконка войти">-->Сравнить
+          </a>
+        </li>
+        <li class="main-nav-list-item">
+          <a href="blank.html">
+            <!-- <img src="img/icon-cart.svg" width="10" height="10" alt="Иконка войти">-->Корзина
+          </a>
+        </li>
       </ul>
     </section>
     <section>
-      <h2 class="visual-hidden">Как с нами связаться</h2>
+      <h2 class="visually-hidden">Как с нами связаться</h2>
       <address>
         <p class="address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         <p class="tel"><a href="tel:+78005558628">Тел.: +7 800 555-86-28</a></p>
@@ -256,36 +284,39 @@
       </ul>
     </section>
     <section class="social">
-      <h2 class="visual-hidden">Мы в социальных сетях</h2>
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <ul class="social-list">
         <li class="social-list-item">
           <a href="blank.html">
-            <img src="img/simple-icons_facebook.png" width="32" height="32" alt="Иконка facebook">
+            <img src="img/icon-facebook.svg" width="32" height="32" alt="Иконка facebook">
           </a>
         </li>
         <li class="social-list-item">
           <a href="blank.html">
-            <img src="img/icon_instagram.png" width="32" height="32" alt="Иконка instagram">
+            <img src="img/icon-instagram.svg" width="32" height="32" alt="Иконка instagram">
           </a>
         </li>
         <li class="social-list-item">
           <a href="blank.html">
-            <img src="img/icon_witter.png" width="32" height="32" alt="Иконка twitter">
+            <img src="img/icon-twitter.svg" width="32" height="32" alt="Иконка twitter">
           </a>
         </li>
       </ul>
+      <a href="https://htmlacademy.ru/" class="logo">
+        <img src="img/logo-htmlacademy.svg" width="163" height="35" alt="Логотип HTML Academy">
+      </a>
     </section>
   </footer>
   <!-- Попапы -->
   <!-- Карта -->
   <section class="map-popup">
-    <h2 class="visual-hidden">Наш адрес</h2>
-    <img src="img/map-1.jpg" width="560" height="222" alt="Карта">
+    <h2 class="visually-hidden">Наш адрес</h2>
+    <img src="img/map.jpg" width="560" height="222" alt="Карта">
     <button type="button">Закрыть</button>
   </section>
   <!-- Форма связи -->
   <section class="feedback-popup">
-    <h2 class="visual-hidden">Связаться с нами</h2>
+    <h2 class="visually-hidden">Связаться с нами</h2>
     <form action="https://echo.htmlacademy.ru/" method="post">
       <fieldset class="feedback-form-name">
         <label for="feedback-form-name">Ваше имя:</label><br>
