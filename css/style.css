@@ -1,0 +1,448 @@
+@font-face {
+  font-family: "Gilroy";
+  src: local(), url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Variables */
+
+:root {
+  --special-yellow: #f7e296;
+  --special-yellow-dark: #f0c52e;
+  --grey-dark: #363636;
+  --black: #000000;
+  --black-opacity-0-3: rgba(0, 0, 0, 0.3);
+  --black-opacity-0-4: rgba(0, 0, 0, 0.4);
+  --white: #ffffff;
+  --grey-light: #e5e5e5;
+  --grey-darken: #eaeaea;
+  --grey-lighen: #f2f2f2;
+  --red-light: #f6dada;
+}
+
+/* Global */
+
+.page-body {
+  min-width: 1160px;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  color: var(--black, black);
+  background-color: var(--white, white);
+}
+
+.page a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* <main> catalog */
+
+.inner-page {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+/* Hide element */
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* List style */
+
+.main-nav__list,
+.main-nav__subnav-list,
+.main-nav__dropnav-list,
+.promo__list,
+.products__list,
+.features__list,
+.features-blocks__list,
+.partners__list,
+.about-us__services-list,
+.main-footer__list,
+.main-footer__subnav-list,
+.social__list {
+  list-style: none;
+}
+
+/* Titles */
+
+.title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 58px;
+  letter-spacing: 9.4px;
+}
+
+/* hover active focus */
+
+.opacity:hover {
+  opacity: 0.6;
+}
+
+.opacity:active {
+  opacity: 0.3;
+}
+
+/* Button */
+
+.button {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.btn {
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    transparent 33.3%,
+    var(--special-yellow-dark) 33.3%,
+    var(--special-yellow-dark) 66.6%,
+    transparent 66.6%,
+    transparent
+  );
+  transition-duration: 20s;
+  transition-property: background-image;
+  padding: 5px 20px;
+  min-width: 260px;
+  min-height: 22px;
+}
+
+.btn:hover {
+  background-image: linear-gradient(
+    to bottom,
+    var(--special-yellow-dark),
+    var(--special-yellow-dark) 33.3%,
+    var(--special-yellow-dark) 33.3%,
+    var(--special-yellow-dark) 66.6%,
+    var(--special-yellow-dark) 66.6%,
+    var(--special-yellow-dark)
+  );
+}
+
+.btn:active {
+  background-image: linear-gradient(
+    to bottom,
+    var(--special-yellow-dark),
+    var(--special-yellow-dark) 33.3%,
+    var(--special-yellow-dark) 33.3%,
+    var(--special-yellow-dark) 66.6%,
+    var(--special-yellow-dark) 66.6%,
+    var(--special-yellow-dark)
+  );
+  color: var(--black-opacity-0-3);
+}
+
+/* Main navigation */
+
+.main-nav {
+  background-color: var(--special-yellow);
+}
+
+/* User navigation */
+
+/* Promo */
+
+.promo {
+  background-image: linear-gradient(
+    to bottom,
+    var(--special-yellow),
+    var(--special-yellow) 10%,
+    transparent 10%,
+    transparent
+  );
+  margin: 0;
+}
+
+.promo__title {
+  letter-spacing: normal;
+}
+
+.promo__description-term {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.promo__description-definition {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.promo__title::before {
+  position: absolute;
+  content: "01";
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 179px;
+  color: var(--white);
+  top: 250px;
+  right: 250px;
+}
+
+/* Products */
+
+.products__title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+
+.products__item {
+  width: 160px;
+}
+
+.products__product-1::before {
+  background-color: var(--special-yellow);
+  content: "";
+  display: block;
+  z-index: -1;
+  width: 160px;
+  height: 160px;
+  background-size: 97px 55px;
+  margin: 0 0 38px 0;
+}
+
+/* Вариант 1 */
+/* Появился большой пробел между .products__product-1 и .products__product-2, так как имеет высоту и ширину, но он сдвинулся */
+.products__product-1::after {
+  background: url("../img/product-1.svg") no-repeat 50% 50%;
+  content: "";
+  display: block;
+  position: relative;
+  z-index: 1;
+  top: -240px;
+  width: 160px;
+  height: 160px;
+  background-size: 97px 55px;
+  margin: 0 0 38px 0;
+}
+
+.products__item-1:hover .products__product-1::before,
+.products__item-1:active .products__product-1::before {
+  background-color: var(--special-yellow-dark);
+}
+
+/* Почему .products__product-1::before тоже становится прозрачным?  */
+.products__item-1:active .products__product-1,
+.products__item-1:active .products__product-1::after {
+  opacity: 0.3;
+}
+
+/* Вариант 2 */
+.products__product-2::before {
+  background: var(--special-yellow) url("../img/product-2.svg") no-repeat 50%
+    50%;
+  content: "";
+  display: block;
+  width: 160px;
+  height: 160px;
+  background-size: 86px 117px;
+  margin: 0 0 38px 0;
+  transition: 0.2s;
+}
+
+.products__item-2:hover .products__product-2::before,
+.products__item-2:active .products__product-2::before {
+  background-color: var(--special-yellow-dark);
+}
+
+.products__item-2:active .products__product-2 {
+  color: var(--black-opacity-0-3);
+}
+
+/* Загружаеться дополнительная картинка */
+.products__item-2:active .products__product-2::before {
+  background-image: url("../img/product-2-opacity.svg");
+}
+
+/* --- */
+
+.products__product-3::before {
+  background: var(--special-yellow) url("../img/product-3.svg") no-repeat 50%
+    50%;
+  content: "";
+  display: block;
+  width: 160px;
+  height: 160px;
+  background-size: 71px 87px;
+  margin: 0 0 38px 0;
+}
+
+.products__product-4::before {
+  background: var(--special-yellow) url("../img/product-4.svg") no-repeat 50%
+    50%;
+  content: "";
+  display: block;
+  width: 160px;
+  height: 160px;
+  background-size: 107px 65px;
+  margin: 0 0 38px 0;
+}
+
+.products__product-5::before {
+  background: var(--special-yellow) url("../img/product-5.svg") no-repeat 50%
+    50%;
+  content: "";
+  display: block;
+  width: 160px;
+  height: 160px;
+  background-size: 56px 98px;
+  margin: 0 0 38px 0;
+}
+
+.products__product-6::before {
+  background: var(--special-yellow) url("../img/product-6.svg") no-repeat 50%
+    50%;
+  content: "";
+  display: block;
+  width: 160px;
+  height: 160px;
+  background-size: 132px 69px;
+  margin: 0 0 38px 0;
+}
+
+/* Features */
+
+.features {
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    transparent 25%,
+    var(--grey-light) 25%,
+    var(--grey-light)
+  );
+}
+
+.features__nav {
+  border-right: 3px solid var(--black);
+}
+
+.features__btn:active {
+  background-image: linear-gradient(
+    to bottom,
+    var(--black),
+    var(--black) 33.3%,
+    var(--black) 33.3%,
+    var(--black) 66.6%,
+    var(--black) 66.6%,
+    var(--black)
+  );
+  color: var(--special-yellow);
+}
+
+/* About us */
+
+.about-us__links {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 28px;
+}
+
+/* Footer */
+
+.main-footer {
+  background-color: var(--grey-dark, #363636);
+  color: var(--white);
+}
+
+.main-footer a {
+  color: var(--white);
+}
+
+.main-footer__logo {
+  fill: var(--special-yellow-dark, #f0c52e);
+}
+
+/* Address */
+
+.address,
+.tel {
+  font-style: normal;
+}
+
+/* Social */
+
+.social__item:hover .social__button {
+  fill-opacity: 0.6;
+}
+
+.social__item:active .social__button {
+  opacity: 0.1;
+}
+
+/* Feedback Modal  */
+
+.feedback-modal__name,
+.feedback-modal__e-mail,
+.feedback-modal__message {
+  border: none;
+}
+
+.form-input {
+  background-color: var(--grey-lighen);
+  color: var(--black-opacity-0-4);
+  border: none;
+}
+
+.form-input:hover {
+  background-color: var(--grey-darken);
+  color: var(--black-opacity-0-4);
+}
+
+.form-input:focus {
+  background-color: none;
+  border: 2px solid var(--special-yellow);
+  color: var(--grey-dark);
+}
