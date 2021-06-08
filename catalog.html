@@ -53,12 +53,9 @@
           <li class="main-nav__subnav-item main-nav__subnav-item-1 button"><a class="opacity"
               href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="main-nav__subnav-item main-nav__subnav-item-2 button"><a class="opacity"
-              href="blank.html">Доставка</a></li>
-          <li class="main-nav__subnav-item main-nav__subnav-item-3 button"><a class="opacity"
-              href="blank.html">Гарантия</a></li>
-          <li class="main-nav__subnav-item main-nav__subnav-item-4 button"><a class="opacity"
-              href="blank.html">Контакты</a></li>
+          <li class="main-nav__subnav-item button"><a class="opacity" href="blank.html">Доставка</a></li>
+          <li class="main-nav__subnav-item button"><a class="opacity" href="blank.html">Гарантия</a></li>
+          <li class="main-nav__subnav-item button"><a class="opacity" href="blank.html">Контакты</a></li>
         </ul>
         <ul class="main-nav__dropnav-list">
           <li class="main-nav__dropnav-item"><a class="opacity" href="blank.html">Виртуальная реальность</a></li>
@@ -72,26 +69,26 @@
     </nav>
   </header>
   <main class="inner-page">
-    <h1 class="inner-page__h1">Моноподы для селфи</h1>
-    <div class="breadcrumbs">
-      <ul class="breadcrumbs__list">
-        <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
-        <li class="breadcrumbs__item">
-          <a href="catalog.html">
-            <!-- <img src="img/icon-breadcrumbs-arrow.svg" width="12" height="12" alt="Стрелочка"> -->Каталог товаров
-          </a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a>
-            <!-- <img src="img/icon-breadcrumbs-arrow.svg" width="12" height="12" alt="Стрелочка"> -->Моноподы для
-            селфи
-          </a>
-        </li>
-      </ul>
-    </div>
+    <h1 class="inner-page__title">Моноподы для селфи</h1>
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+      <li class="breadcrumbs__item">
+        <a href="catalog.html">
+          <!-- <img src="img/icon-breadcrumbs-arrow.svg" width="12" height="12" alt="Стрелочка"> -->Каталог товаров
+        </a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a>
+          <!-- <img src="img/icon-breadcrumbs-arrow.svg" width="12" height="12" alt="Стрелочка"> -->Моноподы для
+          селфи
+        </a>
+      </li>
+    </ul>
     <section class="filter">
-      <h2 class="catalog-title catalog-title__filter">фильтр:</h2>
-      <form class="filter-form" action="https://echo.htmlacademy.ru/" method="post"
+      <div class="filter__title">
+        <h2 class="catalog-title ">фильтр:</h2>
+      </div>
+      <form class="filter__form" action="https://echo.htmlacademy.ru/" method="post"
         oninput="filter-form__price-value.value=filter-form__price.value">
         <div class="filter-form__group">
           <fieldset class="fieldset">
@@ -137,35 +134,22 @@
           <button class="catalog__sort" type="button">По типу</button>
           <button class="catalog__sort" type="button">По популярности</button>
         </div>
-        <div class="sort__btn-top-bottom">
-          <!-- <button class="catalog__sort-to-top" type="button">
-            <svg class="catalog__sort-to-top-img" width="18" height="18" viewBox="0 0 18 18" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 14H14L8.5 4L3 14Z" fill="black" />
-            </svg>
-          </button>
-          <button class="catalog__sort-to-bottom" type="button">
-            <svg class="catalog__sort-to-bottom-img" width="18" height="18" viewBox="0 0 18 18" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M14 4L3 4L8.5 14L14 4Z" fill="black" />
-            </svg>
-          </button> -->
+        <form class="sort__btn-top-bottom">
           <label class="catalog__sort-to-top" for="catalog__sort-to-top">
             <svg class="catalog__sort-to-top-img" width="18" height="18" viewBox="0 0 18 18" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M3 14H14L8.5 4L3 14Z" fill="black" />
             </svg>
           </label>
-          <input class="visually-hidden input-sort-to-top" type="radio" id="catalog__sort-to-top" name="catalog__sort">
+          <input class="visually-hidden" type="radio" id="catalog__sort-to-top" name="catalog__sort">
           <label class="catalog__sort-to-bottom" for="catalog__sort-to-bottom">
             <svg class="catalog__sort-to-bottom-img" width="18" height="18" viewBox="0 0 18 18" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M14 4L3 4L8.5 14L14 4Z" fill="black" />
             </svg>
           </label>
-          <input class="visually-hidden input-sort-to-bottom" type="radio" id="catalog__sort-to-bottom"
-            name="catalog__sort">
-        </div>
+          <input class="visually-hidden" type="radio" id="catalog__sort-to-bottom" name="catalog__sort">
+        </form>
       </div>
       <ul class="catalog__list">
         <li class="catalog__item">
@@ -232,6 +216,7 @@
         </ul>
         <input class="catalog__nav-back button-no-style" type="button" value="назад" title="Сurrent" disabled>
         <input class="catalog__nav-next button-no-style" type="button" value="вперед">
+      </div>
       </div>
     </section>
   </main>
