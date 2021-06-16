@@ -96,7 +96,10 @@
           <fieldset class="fieldset-range fieldset">
             <legend class="filter-form__group-title">Стоимость</legend>
             <div class="axis" style="--range-start: 20%; --range-end: 90%;">
-              <div class="bar"></div>
+              <div class="bar">
+                <div class="bar__start"></div>
+                <div class="bar__end"></div>
+              </div>
             </div>
             <div class="filter-form__range-label">
               <label class="min-price">
@@ -152,22 +155,10 @@
           <button class="catalog__sort" type="button">По типу</button>
           <button class="catalog__sort" type="button">По популярности</button>
         </div>
-        <form class="sort__btn-top-bottom">
-          <label class="catalog__sort-to-top" for="catalog__sort-to-top">
-            <svg class="catalog__sort-to-top-img" width="18" height="18" viewBox="0 0 18 18" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 14H14L8.5 4L3 14Z" fill="black" />
-            </svg>
-          </label>
-          <input class="visually-hidden" type="radio" id="catalog__sort-to-top" name="catalog__sort">
-          <label class="catalog__sort-to-bottom" for="catalog__sort-to-bottom">
-            <svg class="catalog__sort-to-bottom-img" width="18" height="18" viewBox="0 0 18 18" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M14 4L3 4L8.5 14L14 4Z" fill="black" />
-            </svg>
-          </label>
-          <input class="visually-hidden" type="radio" id="catalog__sort-to-bottom" name="catalog__sort">
-        </form>
+        <div class="sort__btn-top-bottom">
+          <button class="catalog__sort-to-top" type="button"></button>
+          <button class="catalog__sort-to-bottom" type="button"></button>
+        </div>
       </div>
       <ul class="catalog__list">
         <li class="catalog__item">
@@ -230,6 +221,7 @@
                 <h3>Селфи-палка «Следуй за мной»</h3>
               </a>
               <span class="catalog__item-price">1 900 руб.</span>
+            </div>
           </article>
         </li>
       </ul>

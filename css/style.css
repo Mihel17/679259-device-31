@@ -77,6 +77,8 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 /* Hide element */
@@ -414,10 +416,13 @@ img {
 /* Modal */
 
 .modal {
-  position: sticky;
+  position: fixed;
   z-index: 3;
-  left: 200px;
-  bottom: 50px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   box-sizing: border-box;
   background: #ffffff;
   box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
@@ -1073,38 +1078,61 @@ img {
   opacity: 1;
 }
 
+.sort__btn-top-bottom {
+  display: flex;
+}
+
 .catalog__sort-to-top {
   background-color: transparent;
   border: none;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-right: 16px;
 }
 
-.catalog__sort-to-top-img {
-  background-image: url("../img/icon-sort-up.svg");
-  opacity: 0.3;
-}
-
-.catalog__sort-to-top:hover .catalog__sort-to-top-img {
-  opacity: 0.6;
-}
-
-.catalog__sort-to-top:active .catalog__sort-to-top-img {
-  opacity: 1;
+.catalog__sort-to-top::before {
+  display: block;
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: transparent url("../img/icon-sort.svg") no-repeat center center;
+  background-size: 10px 11px;
 }
 
 .catalog__sort-to-bottom {
   background-color: transparent;
   border: none;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
-.catalog__sort-to-bottom-img {
-  background-image: url("../img/icon-sort-down.svg");
+.catalog__sort-to-bottom::before {
+  display: block;
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: transparent url("../img/icon-sort.svg") no-repeat center center;
+  background-size: 10px 11px;
+  transform: rotate(180deg);
 }
 
-.catalog__sort-to-bottom:hover .catalog__sort-to-bottom-img {
-  opacity: 0.6;
+.catalog__sort-to-top {
+  opacity: 0.2;
 }
 
-.catalog__sort-to-bottom:active .catalog__sort-to-bottom-img {
+.catalog__sort-to-top:hover,
+.catalog__sort-to-bottom:hover {
+  opacity: 0.4;
+}
+
+.catalog__sort-to-top:active,
+.catalog__sort-to-bottom:active {
   opacity: 1;
 }
 
@@ -1839,7 +1867,7 @@ img {
   background-color: #91c92f;
 }
 
-.bar::before {
+.bar__start::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1856,7 +1884,7 @@ img {
   cursor: pointer;
 }
 
-.bar::after {
+.bar__end::after {
   content: "";
   position: absolute;
   top: 0;
