@@ -70,7 +70,7 @@
   user-select: none;
 }
 
-.page a {
+a {
   text-decoration: none;
   color: var(--black);
 }
@@ -148,6 +148,7 @@ img {
   background-color: transparent;
   font-family: "Gilroy", "Arial", sans-serif;
   cursor: pointer;
+  color: var(--black);
 }
 
 .btn {
@@ -344,13 +345,13 @@ img {
   display: none;
 }
 
-.main-nav__subnav-list-part-1:hover ~ .main-nav__dropnav {
+.main-nav__subnav-list-part-1:hover .main-nav__dropnav {
   display: flex;
   flex-wrap: wrap;
   position: absolute;
   width: 100%;
   height: min-content;
-  top: 100px;
+  top: 105px;
   left: 0;
   z-index: 2;
   padding: 12px 0 46px;
@@ -363,6 +364,8 @@ img {
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
+  text-transform: none;
+  letter-spacing: normal;
   margin-left: 61px;
 }
 
@@ -902,11 +905,16 @@ img {
   letter-spacing: 0.1em;
 }
 
-.features__btn:active,
-.features__btn-background-color:active {
+.features__btn-current,
+.features__btn-current:hover,
+.features__btn-current:active {
   background-image: none;
   background-color: var(--black);
   color: var(--special-yellow);
+}
+
+.features__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .features__list-right {
@@ -1310,7 +1318,8 @@ img {
   grid-area: sub-nav-1;
   display: flex;
   flex-wrap: wrap;
-  margin: 50px 38px 50px 0;
+  margin: 50px 38px 0 0;
+  padding-bottom: 50px;
 }
 
 .main-nav__subnav-list-part-2 {
@@ -1830,7 +1839,8 @@ img {
   background-color: #91c92f;
 }
 
-.bar__start {
+.bar::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1846,7 +1856,8 @@ img {
   cursor: pointer;
 }
 
-.bar__end {
+.bar::after {
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -1862,33 +1873,27 @@ img {
   cursor: pointer;
 }
 
+.filter-form__range-label {
+  display: flex;
+}
+
 .min-price {
   width: auto;
-  display: flex;
-  position: absolute;
-  top: 17px;
-  left: 0;
   margin-right: 10px;
 }
 
 .min-price-input {
-  flex-basis: 50px;
-  flex-grow: 1;
+  width: 60px;
   background-color: transparent;
   border: none;
 }
 
 .max-price {
-  min-width: 60px;
-  display: flex;
-  position: absolute;
-  top: 17px;
-  left: 0;
+  min-width: auto;
 }
 
 .max-price-input {
-  flex-basis: 60px;
-  flex-grow: 1;
+  width: 70px;
   background-color: transparent;
   border: none;
 }
