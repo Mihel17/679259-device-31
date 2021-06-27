@@ -3,21 +3,52 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=width-device, initial-scale=1" <title>Blank page</title>
+  <meta name="viewport" content="width=width-device, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Blank page</title>
+  <style>
+    .main-content-404 {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .main-content-404__container {
+      width: 1000px;
+      height: 500px;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      background: url("../img/404.png") no-repeat 0 center;
+    }
+
+    .main-content-404__text {
+      font-family: "Gilroy", "Arial", sans-serif;
+      font-size: 35px;
+      font-weight: 400;
+      line-height: 58px;
+    }
+
+    .main-content-404__btn {
+      margin-top: 120px;
+    }
+  </style>
 </head>
 
-<body>
-  <header>
-    <a style="display: inline-block; background-color: black; color: white; width: 200px; height: 20px; margin: 10px; text-decoration: none; text-transform: uppercase; font-weight: 700; text-align: center;"
-      href="index.html">На главную</a><br>
-    <a style="display: inline-block; background-color: black; color: white; width: 200px; height: 20px; margin: 10px; text-decoration: none; text-transform: uppercase; font-weight: 700; text-align: center;"
-      href="catalog.html">Каталог</a>
-  </header>
-  <main>
-    <!-- <h1>Blank page</h1> -->
+<body class="404">
+  <main class="main-content-404">
+    <div class="main-content-404__container">
+      <h1 class="title">Мы потеряли эту страницу...</h1>
+      <p class="main-content-404__text">Мы смотрели везде, но не смогли найти то, что вы искали :(</p>
+      <div class="main-content-404__btn">
+        <a class="button btn promo__item-btn" href="index.html">главная</a>
+        <a class="button btn promo__item-btn" href="catalog.html">Каталог</a>
+      </div>
+    </div>
   </main>
-  <footer>
-  </footer>
 </body>
 
 </html>
