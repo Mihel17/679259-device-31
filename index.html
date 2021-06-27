@@ -30,7 +30,7 @@
         <form class="main-nav__form" action="blank.html" method="POST">
           <label class="main-nav__form-label" for="search"></label>
           <input class="main-nav__form-input" type="search" name="search" id="search" placeholder="Поиск по сайту">
-          <input class="main-nav__form-input-btn" type="button" value="Найти" tabindex="-1">
+          <input class="main-nav__form-input-btn" type="button" value="Найти">
         </form>
         <ul class="main-nav__list">
           <li class="main-nav__item nav-item-layout layout-user sign-in">
@@ -218,17 +218,17 @@
         <nav class="features__nav">
           <ul class="features__list">
             <li class="features__item features__item--1">
-              <div class="features__btn--current">
+              <div class="features__btn--current" tabindex="0">
                 <a class="button-no-style button btn features__item-btn">доставка</a>
               </div>
             </li>
             <li class="features__item features__item--2">
-              <div>
+              <div tabindex="0">
                 <a class="button-no-style button btn features__item-btn">гарантия</a>
               </div>
             </li>
             <li class="features__item features__item--3">
-              <div>
+              <div tabindex="0">
                 <a class="button-no-style button btn features__item-btn">кредит</a>
               </div>
             </li>
@@ -344,7 +344,7 @@
           </svg>
           <div class="main-footer__user">
             <span class="user">Валентин Петухов</span>
-            <a class="user-sign-in">Войти</a>
+            <a class="user-sign-in" tabindex="0">Войти</a>
             <a class="user-sign-out">Выйти</a>
           </div>
         </li>

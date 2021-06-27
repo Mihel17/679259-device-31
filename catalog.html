@@ -30,14 +30,14 @@
         <form class="main-nav__form" action="blank.html" method="POST">
           <label class="main-nav__form-label" for="search"></label>
           <input class="main-nav__form-input" type="search" name="search" id="search" placeholder="Поиск по сайту">
-          <input class="main-nav__form-input-btn" type="button" value="Найти" tabindex="-1">
+          <input class="main-nav__form-input-btn" type="button" value="Найти">
         </form>
         <ul class="main-nav__list">
           <li class="main-nav__item nav-item-layout layout-user sign-out">
             <div class="main-nav__user">
               <span class="user">Валентин Петухов</span>
               <a class="user-sign-in">Войти</a>
-              <a class="user-sign-out">Выйти</a>
+              <a class="user-sign-out" tabindex="0">Выйти</a>
             </div>
           </li>
           <li class="main-nav__item">
@@ -116,7 +116,7 @@
             </div>
           </fieldset>
         </div>
-        <div class="filter-form__group">
+        <div class="filter-form__group filter-form__group-color">
           <fieldset class="fieldset-checkbox fieldset">
             <legend class="filter-form__group-title">Цвет</legend>
             <p class="filter-form__group-content">
@@ -169,14 +169,15 @@
       <div class="sort">
         <h3 class="catalog-title catalog-title-sort">сортировка:</h3>
         <div class="sort__btn">
-          <button class="catalog__sort catalog__sort--current" type="button" title="Current">По цене</button>
+          <button class="catalog__sort catalog__sort--current" type="button" title="Current" tabindex="-1">По
+            цене</button>
           <button class="catalog__sort" type="button">По типу</button>
           <button class="catalog__sort" type="button">По популярности</button>
         </div>
         <div class="sort__btn-top-bottom">
           <button class="catalog__sort-to catalog__sort-to-top" type="button"></button>
           <button class="catalog__sort-to catalog__sort-to-bottom catalog__sort-to--current" type="button"
-            title="Current"></button>
+            title="Current" tabindex="-1"></button>
         </div>
       </div>
       <ul class="catalog__list">
@@ -260,7 +261,7 @@
           <li class="catalog__nav-item"><a href="blank.html">2</a></li>
           <li class="catalog__nav-item"><a href="blank.html">3</a></li>
         </ul>
-        <a class="button-no-style catalog__nav-btn catalog__nav-list-btn">вперед</a>
+        <a class="button-no-style catalog__nav-btn catalog__nav-list-btn" tabindex="0">вперед</a>
       </div>
     </section>
   </main>
