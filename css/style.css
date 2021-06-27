@@ -2413,3 +2413,9 @@ input[disabled] + .filter__form-label-radio {
 .hidden {
   display: none;
 }
+
+/* blank page*/
+
+.main-content-404__container {
+  background: url("../img/404.png") no-repeat 0 center;
+}
