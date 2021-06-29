@@ -30,15 +30,11 @@
         <form class="main-nav__form" action="blank.html" method="POST">
           <label class="main-nav__form-label" for="search"></label>
           <input class="main-nav__form-input" type="search" name="search" id="search" placeholder="Поиск по сайту">
-          <input class="main-nav__form-input-btn" type="button" value="Найти" tabindex="0">
+          <button class="main-nav__form-input-btn" type="submit" tabindex="0">Найти</button>
         </form>
         <ul class="main-nav__list">
-          <li class="main-nav__item nav-item-layout layout-user sign-in">
-            <div class="main-nav__user">
-              <span class="user">Валентин Петухов</span>
-              <a class="user-sign-in">Войти</a>
-              <a class="user-sign-out">Выйти</a>
-            </div>
+          <li class="main-nav__item layout-user">
+            <a class="opacity nav-item-layout" tabindex="0">Войти</a>
           </li>
           <li class="main-nav__item">
             <a class="opacity nav-item-layout main-nav__item-2" href="blank.html">Сравнить</a>
@@ -175,37 +171,31 @@
           <li class="products__item products__item-1">
             <a href="blank.html">
               <h3 class="products__title products__product-1">Виртуальная реальность</h3>
-              <!-- <img src="img/product-1.svg" width="97" height="55"> -->
             </a>
           </li>
           <li class="products__item products__item-2">
-            <a href="blank.html">
+            <a href="catalog.html">
               <h3 class="products__title products__product-2">Моноподы<br> для селфи</h3>
-              <!-- <img src="img/product-2.svg" width="86" height="117"> -->
             </a>
           </li>
           <li class="products__item products__item-3">
             <a href="blank.html">
               <h3 class="products__title products__product-3">Экшн-камеры</h3>
-              <!-- <img src="img/product-3.svg" width="71" height="87"> -->
             </a>
           </li>
           <li class="products__item products__item-4">
             <a href="blank.html">
               <h3 class="products__title products__product-4">Фитнес-браслеты</h3>
-              <!-- <img src="img/product-4.svg" width="107" height="65"> -->
             </a>
           </li>
           <li class="products__item products__item-5">
             <a href="blank.html">
               <h3 class="products__title products__product-5">Умные часы</h3>
-              <!-- <img src="img/product-5.svg" width="56" height="98"> -->
             </a>
           </li>
           <li class="products__item products__item-6">
             <a href="blank.html">
               <h3 class="products__title products__product-6">Квадрокоптеры</h3>
-              <!-- <img src="img/product-6.svg" width="132" height="69"> -->
             </a>
           </li>
         </ul>
@@ -335,18 +325,15 @@
         </svg>
       </a>
       <ul class="main-footer__nav-list">
-        <li class="nav-item-layout sign-in">
-          <svg class="main-footer__main-nav-item-icon" role="img" aria-hidden="true" width="13" height="14"
-            viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M6.50002 2.33333C7.6971 2.33333 8.66669 3.3775 8.66669 4.66666C8.66669 5.95583 7.6971 7 6.50002 7C5.30294 7 4.33335 5.95583 4.33335 4.66666C4.33335 3.3775 5.30294 2.33333 6.50002 2.33333ZM6.50002 11.6667C6.50002 11.6667 10.8334 11.6667 10.8334 10.5C10.8334 9.1 8.72085 7.58333 6.50002 7.58333C4.27919 7.58333 2.16669 9.1 2.16669 10.5C2.16669 11.6667 6.50002 11.6667 6.50002 11.6667Z"
-              fill="#FFC600" />
-          </svg>
-          <div class="main-footer__user">
-            <span class="user">Валентин Петухов</span>
-            <a class="user-sign-in" tabindex="0">Войти</a>
-            <a class="user-sign-out">Выйти</a>
-          </div>
+        <li class="main-footer__item">
+          <a class="nav-item-layout" href="blank.html" tabindex="0">
+            <svg class="main-footer__main-nav-item-icon" role="img" aria-hidden="true" width="13" height="14"
+              viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.50002 2.33333C7.6971 2.33333 8.66669 3.3775 8.66669 4.66666C8.66669 5.95583 7.6971 7 6.50002 7C5.30294 7 4.33335 5.95583 4.33335 4.66666C4.33335 3.3775 5.30294 2.33333 6.50002 2.33333ZM6.50002 11.6667C6.50002 11.6667 10.8334 11.6667 10.8334 10.5C10.8334 9.1 8.72085 7.58333 6.50002 7.58333C4.27919 7.58333 2.16669 9.1 2.16669 10.5C2.16669 11.6667 6.50002 11.6667 6.50002 11.6667Z"
+                fill="#FFC600" />
+            </svg>
+            Войти</a>
         </li>
         <li class="main-footer__item">
           <a class="nav-item-layout" href="blank.html">

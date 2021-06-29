@@ -29,57 +29,7 @@ closeFeedback.addEventListener("click", function(evt){
   feedback_modal.classList.add("hidden");
 });
 
-// sign in
-let sign_in = document.querySelector('.user-sign-in');
-let sign_out = document.querySelector('.user-sign-out');
-let user_nav = document.querySelector('.main-nav__list .layout-user');
-// footer
-let sign_in_footer = document.querySelector('.main-footer__user .user-sign-in');
-let sign_out_footer = document.querySelector('.main-footer__user .user-sign-out');
-let user_nav_footer = document.querySelector('.main-footer__nav-list .sign-in');
-let user_logged;
-
-sign_in.tabIndex = 0;
-
-sign_in.addEventListener("click", function(evt){
-  evt.preventDefault();
-  user_nav.classList.toggle("sign-out");
-  user_nav.classList.toggle("sign-in");
-  user_logged = true;
-  console.log(user_logged);
-  sign_in.tabIndex = -1;
-  sign_out.tabIndex = 0;
-});
-
-sign_out.addEventListener("click", function(evt){
-  evt.preventDefault();
-  user_nav.classList.toggle("sign-out");
-  user_nav.classList.toggle("sign-in");
-  user_logged = false;
-  console.log(user_logged);
-  sign_in.tabIndex = 0;
-  sign_out.tabIndex = -1;
-});
-
-sign_in_footer.addEventListener("click", function(evt){
-  evt.preventDefault();
-  user_nav_footer.classList.toggle("sign-out");
-  user_nav_footer.classList.toggle("sign-in");
-  user_logged = true;
-  console.log(user_logged);
-  sign_in.tabIndex = -1;
-  sign_out.tabIndex = 0;
-});
-
-sign_out_footer.addEventListener("click", function(evt){
-  evt.preventDefault();
-  user_nav_footer.classList.toggle("sign-out");
-  user_nav_footer.classList.toggle("sign-in");
-  user_logged = false;
-  console.log(user_logged);
-  sign_in.tabIndex = 0;
-  sign_out.tabIndex = -1;
-});
+// sliders
 
 const promo = document.querySelector('.promo');
 const promo_slider_btn_1 = promo.querySelector('.promo__slider-controler-btn--1');
@@ -170,5 +120,3 @@ features__item_3.addEventListener('click', function(evt){
 });
 
 features__item_current.tabIndex = -1;
-
-// ...

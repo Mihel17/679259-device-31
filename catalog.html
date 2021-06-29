@@ -30,15 +30,12 @@
         <form class="main-nav__form" action="blank.html" method="POST">
           <label class="main-nav__form-label" for="search"></label>
           <input class="main-nav__form-input" type="search" name="search" id="search" placeholder="Поиск по сайту">
-          <input class="main-nav__form-input-btn" type="button" value="Найти">
+          <button class="main-nav__form-input-btn" type="submit" tabindex="0">Найти</button>
         </form>
         <ul class="main-nav__list">
-          <li class="main-nav__item nav-item-layout layout-user sign-out">
-            <div class="main-nav__user">
-              <span class="user">Валентин Петухов</span>
-              <a class="user-sign-in">Войти</a>
-              <a class="user-sign-out" tabindex="0">Выйти</a>
-            </div>
+          <li class="main-nav__item layout-user">
+            <a class="user nav-item-layout opacity" href="blank.html">Валентин Петухов</a>
+            <button class="user-sign-out opacity" tabindex="0">Выйти</button>
           </li>
           <li class="main-nav__item">
             <a class="opacity nav-item-layout main-nav__item-2" href="blank.html">Сравнить</a>
@@ -54,8 +51,7 @@
               <ul class="main-nav__dropnav-list main-nav__dropnav-list-column-1">
                 <li class="main-nav__dropnav-item"><a class="opacity main-nav__subnav-item-link"
                     href="blank.html">Виртуальная реальность</a></li>
-                <li class="main-nav__dropnav-item"><a class="opacity main-nav__subnav-item-link"
-                    href="catalog.html">Моноподы
+                <li class="main-nav__dropnav-item"><a class="opacity main-nav__subnav-item-link">Моноподы
                     для селфи</a></li>
                 <li class="main-nav__dropnav-item"><a class="opacity main-nav__subnav-item-link"
                     href="blank.html">Экшн-камеры</a></li>
@@ -235,7 +231,7 @@
             </div>
           </article>
         </li>
-        <li class="catalog__item catalog__item-new">
+        <li class="catalog__item catalog__item--new">
           <article>
             <div class="catalog__items-hover">
               <img class="catalog__item-img" src="img/catalog-item-4.png" width="360" height="380"
@@ -275,18 +271,17 @@
         </svg>
       </a>
       <ul class="main-footer__nav-list">
-        <li class="nav-item-layout sign-out">
-          <svg class="main-footer__main-nav-item-icon" role="img" aria-hidden="true" width="13" height="14"
-            viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M6.50002 2.33333C7.6971 2.33333 8.66669 3.3775 8.66669 4.66666C8.66669 5.95583 7.6971 7 6.50002 7C5.30294 7 4.33335 5.95583 4.33335 4.66666C4.33335 3.3775 5.30294 2.33333 6.50002 2.33333ZM6.50002 11.6667C6.50002 11.6667 10.8334 11.6667 10.8334 10.5C10.8334 9.1 8.72085 7.58333 6.50002 7.58333C4.27919 7.58333 2.16669 9.1 2.16669 10.5C2.16669 11.6667 6.50002 11.6667 6.50002 11.6667Z"
-              fill="#FFC600" />
-          </svg>
-          <div class="main-footer__user">
+        <li class="nav-item-layout layout-user">
+          <a class="main-footer__user" href="blank.html" tabindex="0">
+            <svg class="main-footer__main-nav-item-icon" role="img" aria-hidden="true" width="13" height="14"
+              viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.50002 2.33333C7.6971 2.33333 8.66669 3.3775 8.66669 4.66666C8.66669 5.95583 7.6971 7 6.50002 7C5.30294 7 4.33335 5.95583 4.33335 4.66666C4.33335 3.3775 5.30294 2.33333 6.50002 2.33333ZM6.50002 11.6667C6.50002 11.6667 10.8334 11.6667 10.8334 10.5C10.8334 9.1 8.72085 7.58333 6.50002 7.58333C4.27919 7.58333 2.16669 9.1 2.16669 10.5C2.16669 11.6667 6.50002 11.6667 6.50002 11.6667Z"
+                fill="#FFC600" />
+            </svg>
             <span class="user">Валентин Петухов</span>
-            <a class="user-sign-in" href="blank.html">Войти</a>
-            <a class="user-sign-out" href="blank.html">Выйти</a>
-          </div>
+          </a>
+          <button class="user-sign-out opacity" tabindex="0">Выйти</button>
         </li>
         <li class="main-footer__item">
           <a class="nav-item-layout" href="blank.html">
